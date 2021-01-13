@@ -1,0 +1,14 @@
+.boxContainer {
+  flex: 0.5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxContainer__box {
+  border: 1px solid black;
+  background-color: yellow;
+  height: 400px;
+  width: 400px;
+}
