@@ -7,7 +7,7 @@ function BoxContainer({ x, y, blur, spread, color, inset }) {
     <div className="boxContainer">
       <div
         className="boxContainer__box"
-        style={{ boxShadow: `1px 1px 5px 5px black` }}
+        style={{ boxShadow: `${x}px ${y}px ${blur}px ${spread}px ${color}` }}
       >
         {/* Add CSS Code */}
       </div>

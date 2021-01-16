@@ -8,7 +8,6 @@
 
 .boxContainer__box {
   border: 1px solid black;
-  background-color: yellow;
   height: 400px;
   width: 400px;
 }
