@@ -10,4 +10,12 @@
   border: 1px solid black;
   height: 400px;
   width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxContainer__box textarea {
+  width: 75%;
+  height: 25%;
 }

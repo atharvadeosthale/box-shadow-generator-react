@@ -1,4 +1,4 @@
-import { Slider } from "@material-ui/core";
+import { Slider, Switch } from "@material-ui/core";
 import React, { Fragment, useState } from "react";
 import { SketchPicker } from "react-color";
 import BoxContainer from "./BoxContainer";
@@ -10,6 +10,8 @@ function Controls() {
   const [blur, setBlur] = useState(0);
   const [spread, setSpread] = useState(0);
   const [color, setColor] = useState("#000");
+  const [inset, setInset] = useState(true);
+
   return (
     <Fragment>
       <div className="controls">
@@ -82,6 +84,7 @@ function Controls() {
             disabled
           />
         </div>
+
         <div className="controls__group">
           <SketchPicker
             color={color}
@@ -89,7 +92,14 @@ function Controls() {
           />
         </div>
       </div>
-      <BoxContainer x={x} y={y} spread={spread} blur={blur} color={color} />
+      <BoxContainer
+        x={x}
+        y={y}
+        spread={spread}
+        blur={blur}
+        color={color}
+        inset={inset}
+      />
     </Fragment>
   );
 }
